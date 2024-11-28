@@ -247,7 +247,6 @@ function QuizApp() {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [showRegister, setShowRegister] = useState(false);
     const [timeLeft, setTimeLeft] = useState(0);
-    const [showCommunity, setShowCommunity] = useState(false);
     const [scores, setScores] = useState(() => {
         const storedScores = JSON.parse(localStorage.getItem('scores')) || [];
         return storedScores.map(s => ({ date: 'N/A', ...s }));
@@ -260,7 +259,6 @@ function QuizApp() {
     const [difficulty, setDifficulty] = useState('easy');
     const [level, setLevel] = useState(null);
     const [animationClass, setAnimationClass] = useState('');
-    const [communityKey, setCommunityKey] = useState(0);
 
     useEffect(() => {
         fetch('quizData.json')
@@ -334,7 +332,7 @@ function QuizApp() {
 
     useEffect(() => {
         if (showCommunity) {
-            setCommunityKey(prevKey => prevKey + 1);
+            setShowCommunity(false);
         }
     }, [showCommunity]);
 
@@ -363,28 +361,7 @@ function QuizApp() {
     }
 
     if (showCommunity) {
-        return (
-            <div>
-                <Navbar />
-                <Community
-                    key={communityKey}
-                    onPlayAgain={() => {
-                        setLevel(null);
-                        setCurrentQuiz(0);
-                        setScore(0);
-                        setResults([]);
-                        setSelectedQuestions([]);
-                        setCurrentQuizData(null);
-                        setShowCommunity(false);
-                        setFeedback(null);
-                    }}
-                    score={score}
-                    level={level}
-                />
-                <Footer />
-                {feedback && <div className="quiz-feedback">{feedback}</div>}
-            </div>
-        );
+        return null;
     }
 
     if (!currentQuizData) {
@@ -415,7 +392,7 @@ function QuizApp() {
             const newScores = [...scores, newScore];
             localStorage.setItem('scores', JSON.stringify(newScores));
             setScores(newScores);
-            setShowCommunity(true);
+            setShowCommunity(false);
         }
     };
 
@@ -452,56 +429,6 @@ function QuizApp() {
                 </div>
             </div>
             <Footer />
-        </div>
-    );
-}
-
-function Community({ onPlayAgain, score, level }) {
-    const getFeedbackMessage = () => {
-        if (score === 10) {
-            return "Perfect score! You're a true Axumite Kingdom expert!";
-        } else if (score >= 8) {
-            return "Great job! You have a good understanding of the Axumite Kingdom.";
-        } else if (score >= 5) {
-            return "Good effort! Keep studying to improve your knowledge.";
-        } else {
-            return "Don't worry! Try again to learn more about the Axumite Kingdom.";
-        }
-    };
-
-    const getLevelMessage = () => {
-        switch (level) {
-            case 'easy':
-                return "You played on Easy difficulty.";
-            case 'medium':
-                return "You played on Medium difficulty.";
-            case 'hard':
-                return "You played on Hard difficulty.";
-            default:
-                return "";
-        }
-    };
-
-    return (
-        <div className="container mt-5 community-section">
-            <div className="card">
-                <div className="card-header">
-                    <h2>Quiz Results</h2>
-                </div>
-                <div className="card-body">
-                    <div className="feedback-message">
-                        <h3>{getFeedbackMessage()}</h3>
-                        <p>{getLevelMessage()}</p>
-                        <p>You scored {score} points.</p>
-                    </div>
-                    <button
-                        className="btn btn-primary mt-3"
-                        onClick={onPlayAgain}
-                    >
-                        Play Again
-                    </button>
-                </div>
-            </div>
         </div>
     );
 }
