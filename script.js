@@ -209,6 +209,8 @@ function Footer() {
 }
 
 function DifficultyChooser({ onSelectDifficulty }) {
+    const [timeLeft, setTimeLeft] = useState(0);
+
     return (
         <div className="auth-container mt-5">
             <div className="difficulty-chooser">
@@ -259,6 +261,8 @@ function QuizApp() {
     const [difficulty, setDifficulty] = useState('easy');
     const [level, setLevel] = useState(null);
     const [animationClass, setAnimationClass] = useState('');
+    const [showCommunity, setShowCommunity] = useState(false);
+    const [quizFinished, setQuizFinished] = useState(false);
 
     useEffect(() => {
         fetch('quizData.json')
@@ -392,9 +396,53 @@ function QuizApp() {
             const newScores = [...scores, newScore];
             localStorage.setItem('scores', JSON.stringify(newScores));
             setScores(newScores);
-            setShowCommunity(false);
+            setQuizFinished(true);
         }
     };
+
+    const getCompliment = () => {
+        const percentage = (score / selectedQuestions.length) * 100;
+        if (percentage === 100) {
+            return "Perfect Score! Well done!";
+        } else if (percentage >= 80) {
+            return "Great job!";
+        } else if (percentage >= 50) {
+            return "Good effort!";
+        } else {
+            return "Keep trying!";
+        }
+    };
+
+    const getIncorrectQuestions = () => {
+        return selectedQuestions.filter((_, index) => results[index] === false);
+    };
+
+    if (quizFinished) {
+        const incorrectQuestions = getIncorrectQuestions();
+        return (
+            <div className="quiz-finished">
+                <h2>{getCompliment()}</h2>
+                <p>Your score: {score}/{selectedQuestions.length}</p>
+                <p>Thank you for participating in the Axumite Kingdom Quiz.</p>
+                {incorrectQuestions.length > 0 && (
+                    <div className="incorrect-questions">
+                        <h3>Questions you got wrong:</h3>
+                        {incorrectQuestions.map((question, index) => (
+                            <div key={index} className="incorrect-question">
+                                <p><strong>Question:</strong> {question.question}</p>
+                                <p><strong>Correct Answer:</strong> {question[question.correct]}</p>
+                            </div>
+                        ))}
+                    </div>
+                )}
+                <button onClick={() => {
+                    setQuizFinished(false);
+                    setLevel(null);
+                }}>Restart Quiz</button>
+                <Footer />
+            </div>
+        );
+    }
 
     const totalTime = level === 'easy' ? 6 : level === 'medium' ? 8 : 10;
 
