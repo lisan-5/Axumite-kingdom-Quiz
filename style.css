@@ -1105,14 +1105,10 @@ body.quiz-time .footer {
     transform: scale(1.05);
 }
 
-/* Hide Theme Toggle on Quiz Page */
 body.quiz-time .theme-toggle {
     display: none;
 }
 
-/* ...existing code... */
-
-/* Add styles for lifelines */
 .lifelines {
     display: flex;
     justify-content: center;
@@ -1150,153 +1146,7 @@ body.quiz-time .theme-toggle {
 
 /* Style for community section */
 .community-section {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: rgba(30, 30, 30, 0.9); /* Adjusted opacity */
-    border-radius: 10px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 0.5s ease-in-out;
-}
-
-.community-section h2 {
-    color: #6f42c1;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.post {
-    border-bottom: 1px solid #6f42c1;
-    padding: 10px 0;
-}
-
-.post h4 {
-    margin: 0;
-    color: #6f42c1;
-}
-
-.post p {
-    color: #fff;
-}
-
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #6f42c1;
-    border-radius: 5px;
-    background-color: #121212;
-    color: #fff;
-    resize: none;
-}
-
-textarea::placeholder {
-    color: #ccc;
-}
-
-.community-section button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #6f42c1 0%, #0d6efd 100%);
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-}
-
-.community-section button:hover {
-    background: linear-gradient(135deg, #59329e 0%, #0b5ed7 100%);
-    transform: scale(1.05);
-}
-
-/* Animate buttons and inputs */
-button, input, textarea {
-    transition: all 0.3s ease;
-}
-
-/* ...existing code... */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Style for the logo */
-.logo {
-    font-family: 'Pacifico', cursive;
-    font-size: 48px;
-    color: #6f42c1;
-    text-align: center;
-    margin-top: 20px;
-    animation: logo-animation 2s infinite, logo-cool-animation 5s infinite;
-}
-
-/* Animation for the logo */
-@keyframes logo-animation {
-    0% {
-        transform: scale(1);
-        text-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
-    }
-    50% {
-        transform: scale(1.05);
-        text-shadow: 0 0 20px rgba(111, 66, 193, 0.7);
-    }
-    100% {
-        transform: scale(1);
-        text-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
-    }
-}
-
-@keyframes logo-cool-animation {
-    0% {
-        transform: rotate(0deg) scale(1);
-        color: #6f42c1;
-    }
-    25% {
-        transform: rotate(15deg) scale(1.1);
-        color: #0d6efd;
-    }
-    50% {
-        transform: rotate(-15deg) scale(1.2);
-        color: #28a745;
-    }
-    75% {
-        transform: rotate(15deg) scale(1.1);
-        color: #fd7e14;
-    }
-    100% {
-        transform: rotate(0deg) scale(1);
-        color: #6f42c1;
-    }
-}
-
-.community-section {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    padding: 20px;
-    animation: fadeInUp 0.5s ease-in-out;
-}
-
-.community-section .card {
-    background-color: #2c2c2c;
-    border: none;
-    border-radius: 10px;
-}
-
-.community-section .card-header {
-    background-color: #6f42c1;
-    color: #fff;
-    border-radius: 10px 10px 0 0;
-}
-
-.discussion-board h3 {
-    color: #6f42c1;
-    margin-bottom: 20px;
+    display: none;
 }
 
 .timer-container {
