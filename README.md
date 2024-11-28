@@ -1,8 +1,8 @@
-# Axumite Kingdom Quiz
+# 🌟 Axumite Kingdom Quiz 🌟
 
-Welcome to the Axumite Kingdom Quiz! This project is a web-based quiz application that tests your knowledge about the Axumite Kingdom. It is built using React for the frontend and Bootstrap for styling, ensuring a responsive and visually appealing user interface.
+Welcome to the **Axumite Kingdom Quiz**! This project is a web-based quiz application that tests your knowledge about the Axumite Kingdom. Built with **React** and **Bootstrap**, it ensures a responsive and visually appealing user interface.
 
-## Features
+## 🚀 Features
 
 - **User Authentication**: Register and login functionality to track user progress.
 - **Difficulty Levels**: Choose from easy, medium, and hard difficulty levels.
@@ -11,14 +11,15 @@ Welcome to the Axumite Kingdom Quiz! This project is a web-based quiz applicatio
 - **Responsive Design**: Fully responsive design using Bootstrap, ensuring compatibility across various devices.
 - **Animations**: Smooth animations for transitions and interactions.
 
-## Technologies Used
+## 🛠 Technologies Used
 
 - **React**: A JavaScript library for building user interfaces.
 - **Bootstrap**: A CSS framework for responsive design.
 - **Font Awesome**: Icons for enhancing the UI.
 - **Local Storage**: To store user data and quiz scores.
 
-## Getting Started
+
+## 🏁 Getting Started
 
 To get a local copy up and running, follow these simple steps:
 
@@ -45,14 +46,14 @@ To get a local copy up and running, follow these simple steps:
     npm start
     ```
 
-## Usage
+## 🎮 Usage
 
-- Open your browser and navigate to `Axum.vercel.app`.
+- Open your browser and navigate to `axumite.netlify.app`.
 - Register or login to start the quiz.
 - Select a difficulty level and begin answering questions.
 - Track your progress and score as you complete the quiz.
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -62,12 +63,12 @@ Contributions are what make the open-source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
+## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Contact
+## 📬 Contact
 
-Lisanegebriel Abay Kebedew - [LinkedIn](https://www.linkedin.com/in/lisanege/) - [Email](mailto:lisane5abay@gmail.com)
+Lisanegebriel Abay Kebedew - [LinkedIn](https://www.linkedin.com/in/lisane/) - [Email](mailto:lisane5abay@gmail.com)
 
 Project Link: [https://github.com/lisan-5/Axumite-kingdom-Quiz](https://github.com/lisan-5/Axumite-kingdom-Quiz)
