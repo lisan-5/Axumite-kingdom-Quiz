@@ -1,0 +1,1807 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    background-image: linear-gradient(rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 0.5)), url('src/img/pic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --background-color: #1e1e1e; /* Darker background */
+    --text-color: #ffffff; /* Light text */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Improve Card Appearance */
+.card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: none;
+    color: #fff;
+    text-align: center;
+    animation: fadeInUp 0.5s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Improve Card Appearance */
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 800px; /* Added or increased max-width */
+    width: 100%; /* Ensure the card takes full width of its container */
+    background-color: #1e1e1e; /* Dark card background */
+    color: #ffffff; /* Light text inside cards */
+    animation: fadeInUp 0.5s ease-in-out;
+    padding: 10px; /* Reduced padding to decrease vertical size */
+    margin: 10px auto; /* Reduced margin */
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(255, 255, 255, 0.2);
+}
+
+.card-header {
+    background: #6f42c1; /* Purple */
+    color: #fff;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    animation: fadeInDown 0.5s ease-in-out;
+}
+
+.card-body {
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Style quiz questions */
+.quiz-card-body h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Style the question number */
+.card-body h5.mb-3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6f42c1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question-number {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #6f42c1;
+    border-radius: 50%;
+    background-color: #333333;
+    color: #6f42c1;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    animation: pulse-question 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(111, 66, 193, 0.7);
+    }
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 10px rgba(111, 66, 193, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(111, 66, 193, 0);
+    }
+}
+
+@keyframes pulse-question {
+    0% {
+        transform: scale(1);
+        background-color: #333333;
+        border-color: #6f42c1;
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: #6f42c1;
+        color: #ffffff;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #333333;
+        color: #6f42c1;
+    }
+}
+
+.form-check-label {
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add Smooth Transitions */
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.form-check-input:active {
+    transform: scale(1.1);
+}
+
+button {
+    background-color: #6f42c1;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #59329e;
+    transform: translateY(-2px);
+}
+
+button.btn-primary {
+    background: linear-gradient(135deg, #6f42c1 0%, #0d6efd 100%);
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transition: background 0.4s, transform 0.2s;
+}
+
+button.btn-primary:hover {
+    background: linear-gradient(135deg, #59329e 0%, #0b5ed7 100%);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+button.btn-link {
+    font-weight: 500;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+button.btn-link:hover {
+    color: #59329e;
+    text-decoration: underline;
+}
+
+.mt-3 h5 {
+    font-size: 18px;
+}
+
+.custom-progress {
+    display: flex;
+    height: 10px;
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 10px; /* Add bottom margin */
+    width: 100%;
+    background-color: #e0e0e0; /* Gray background for the ProgressBar */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ...existing code... */
+.progress-segment {
+    flex-grow: 1; /* Ensure all segments are equal in size */
+    margin: 0 2px;
+    height: 100%;
+    transition: background-color 0.5s ease;
+}
+
+.progress-segment.unanswered {
+    background-color: #e0e0e0; /* Gray for unanswered */
+}
+
+.progress-segment.correct {
+    background-color: #28a745; /* Green for correct answers */
+}
+
+.progress-segment.wrong {
+    background-color: #dc3545; /* Red for wrong answers */
+}
+/* ...existing code... */
+
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.list-group-item {
+    font-size: 18px;
+}
+
+.square-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+    margin: 0 auto; /* Center the button */
+}
+
+.square-btn:hover {
+    transform: rotate(360deg);
+    background-color: #6f42c1;
+}
+
+img {
+    max-height: 50px;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #6f42c1;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: logoAnimation 2s infinite, logo-cool-animation 5s infinite; /* Added animation */
+}
+
+@keyframes logoAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes logo-cool-animation {
+    0% {
+        transform: rotate(0deg) scale(1);
+        color: #6f42c1;
+    }
+    25% {
+        transform: rotate(15deg) scale(1.1);
+        color: #0d6efd;
+    }
+    50% {
+        transform: rotate(-15deg) scale(1.2);
+        color: #28a745;
+    }
+    75% {
+        transform: rotate(15deg) scale(1.1);
+        color: #fd7e14;
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+        color: #6f42c1;
+    }
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    background-color: transparent; /* Remove background */
+    color: #ffffff;
+    text-align: left; /* Align text to the left */
+    padding: 5px; /* Reduce padding */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px; /* Smaller font size */
+    box-shadow: none; /* Remove shade effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .card-header, .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .form-check-label {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .question-number {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+
+    .square-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo {
+        font-size: 36px; /* Increased size */
+    }
+
+    body {
+        background-size: cover; /* Ensure background image covers the entire screen */
+    }
+
+    .timer-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .timer-text {
+        font-size: 1.2rem;
+    }
+
+    .difficulty-chooser .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .difficulty-time {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 5px;
+    }
+
+    .card-header, .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .question-number {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 16px;
+    }
+
+    .square-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo {
+        font-size: 32px; /* Increased size */
+    }
+
+    .timer-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timer-text {
+        font-size: 1rem;
+    }
+
+    .difficulty-chooser .btn {
+        width: 100%;
+        margin: 5px 0;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .difficulty-time {
+        font-size: 12px;
+    }
+}
+
+
+.copyright {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: #6f42c1;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container {
+    max-width: 700px; /* Increased from 500px */
+    margin: auto;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px;
+    background-color: rgba(30, 30, 30, 0.9); /* Dark background */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-header h2 {
+    font-size: 30px; /* Increased size */
+    color: #6f42c1;
+}
+
+.auth-form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.auth-form-group label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 14px;
+    color: #6f42c1;
+    font-weight: bold;
+}
+
+.auth-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    border-radius: 0;
+    font-size: 16px;
+    color: #ffffff; /* Light text color */
+    transition: border-color 0.3s;
+}
+
+.auth-form-group input:focus {
+    border-bottom-color: #6f42c1;
+    outline: none;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #6f42c1 0%, #0d6efd 100%);
+    color: #fff;
+    border: none;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.auth-btn:hover {
+    background: linear-gradient(135deg, #59329e 0%, #0b5ed7 100%);
+    transform: scale(1.05);
+}
+
+.auth-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer; /* Add this line */
+}
+
+.auth-link:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+}
+
+/* Style the show/hide password button */
+.input-group-append .btn {
+    background: none;
+    border: none;
+    color: #6f42c1;
+}
+
+.input-group-append .btn:hover {
+    color: #59329e;
+}
+
+/* Style the input group */
+.input-group {
+    position: relative;
+}
+
+.input-group-append {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.input-group-append .btn {
+    height: 100%;
+    border: none;
+    background: none;
+}
+
+@media (max-width: 576px) {
+    .auth-container {
+        padding: 20px;
+        margin-top: 30px;
+    }
+}
+
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.share-button {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #6f42c1;
+    transition: color 0.3s;
+}
+
+.share-button:hover {
+    color: #59329e;
+}
+
+.feedback-form {
+    margin-top: 30px;
+}
+
+.feedback-form h3 {
+    text-align: center;
+    color: #6f42c1;
+    margin-bottom: 20px;
+}
+
+.feedback-form .form-group {
+    margin-bottom: 15px;
+}
+
+.feedback-form .form-group label {
+    font-size: 16px;
+    color: #6f42c1;
+}
+
+.feedback-form .form-group input,
+.feedback-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff; /* Light text color */
+    transition: all 0.3s ease;
+}
+
+.feedback-form .form-group input:focus,
+.feedback-form .form-group textarea:focus {
+    border-color: #6f42c1;
+    outline: none;
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #6f42c1;
+    color: #fff;
+    border: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.feedback-form button:hover {
+    background: #59329e;
+    transform: scale(1.05);
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-header, .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .form-check-label {
+        font-size: 1rem;
+    }
+
+    .auth-container {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .auth-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .auth-btn {
+        font-size: 1rem;
+    }
+
+    .question-number {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    .card-header, .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1.125rem;
+    }
+
+    .form-check-label {
+        font-size: 0.875rem;
+    }
+
+    .auth-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .auth-btn {
+        font-size: 0.875rem;
+        padding: 8px;
+    }
+
+    .question-number {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 0.875rem;
+    }
+
+    .logo {
+        font-size: 1.75rem;
+    }
+}
+
+.header-logo {
+    font-size: 100px; /* Increased size */
+    color: yellow; /* Changed color to yellow */
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+    animation: logoAnimation 2s infinite;
+}
+
+@keyframes logoAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+body.quiz-time .header-logo,
+body.quiz-time .footer {
+    display: none;
+}
+
+.difficulty-chooser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(30, 30, 30, 0.8); /* Adjusted opacity */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.difficulty-chooser h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.difficulty-chooser .btn {
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+    margin: 10px 0;
+}
+
+.difficulty-chooser .btn.easy {
+    background: #28a745; /* Green */
+}
+
+.difficulty-chooser .btn.medium {
+    background: #fd7e14; /* Orange */
+}
+
+.difficulty-chooser .btn.hard {
+    background: #dc3545; /* Red */
+}
+
+.difficulty-chooser .btn:hover {
+    background: linear-gradient(135deg, #ff6a4d 0%, #fd9a6e 100%);
+    transform: scale(1.05);
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 30, 30, 0.9); /* Semi-transparent dark background */
+    color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.quiz-card {
+    background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent dark background */
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.quiz-card-header {
+    background: #6f42c1;
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInDown 0.5s ease-in-out;
+}
+
+.quiz-card-body {
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.animated-question {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.animated-option {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.animated-submit {
+    animation: bounceIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.form-check {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.form-check:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-color: #6f42c1;
+}
+
+.form-check-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+}
+
+.form-check-label {
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px 15px;
+    display: block;
+    background-color: rgba(30, 30, 30, 0.8);
+    border-radius: 5px;
+}
+
+.form-check-input:checked + .form-check-label {
+    background-color: #6f42c1;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
+}
+
+/* Add new animation for quiz options */
+@keyframes optionFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-option {
+    animation: optionFadeIn 0.5s ease-in-out;
+}
+
+/* Add new hover effect */
+.form-check-label:hover {
+    background-color: #6f42c1;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent; /* Changed from linear-gradient */
+    color: #fff;
+    padding: 0; /* Further reduced padding */
+    margin: 0 auto; /* Further reduced margin */
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.quiz-card {
+    background-color: rgba(30, 30, 30, 0.8); /* Changed from solid color to semi-transparent */
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    margin: 10px auto; /* Reduced margin */
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.quiz-card-header {
+    background: #6f42c1;
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInDown 0.5s ease-in-out;
+}
+
+.quiz-card-body {
+    padding: 10px; /* Reduced padding */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.animated-question {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.animated-option {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.animated-submit {
+    animation: bounceIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.difficulty-chooser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* Style Difficulty Buttons */
+.difficulty-chooser .btn {
+    width: 200px;
+    padding: 15px 0;
+    margin: 10px 0;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.difficulty-chooser .btn.easy {
+    background: #28a745; /* Green */
+}
+
+.difficulty-chooser .btn.medium {
+    background: #fd7e14; /* Orange */
+}
+
+.difficulty-chooser .btn.hard {
+    background: #dc3545; /* Red */
+}
+
+.difficulty-chooser .btn:hover {
+    transform: scale(1.05);
+}
+
+/* Hide Theme Toggle on Quiz Page */
+body.quiz-time .theme-toggle {
+    display: none;
+}
+
+/* ...existing code... */
+
+/* Add styles for lifelines */
+.lifelines {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.lifeline {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #6f42c1;
+    transition: color 0.3s;
+}
+
+.lifeline.disabled {
+    color: #ccc;
+    pointer-events: none;
+}
+
+.lifeline:hover {
+    color: #59329e;
+}
+
+/* Add animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style for community section */
+.community-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.9); /* Adjusted opacity */
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.community-section h2 {
+    color: #6f42c1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post {
+    border-bottom: 1px solid #6f42c1;
+    padding: 10px 0;
+}
+
+.post h4 {
+    margin: 0;
+    color: #6f42c1;
+}
+
+.post p {
+    color: #fff;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6f42c1;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #fff;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #ccc;
+}
+
+.community-section button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6f42c1 0%, #0d6efd 100%);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.community-section button:hover {
+    background: linear-gradient(135deg, #59329e 0%, #0b5ed7 100%);
+    transform: scale(1.05);
+}
+
+/* Animate buttons and inputs */
+button, input, textarea {
+    transition: all 0.3s ease;
+}
+
+/* ...existing code... */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style for the logo */
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    color: #6f42c1;
+    text-align: center;
+    margin-top: 20px;
+    animation: logo-animation 2s infinite, logo-cool-animation 5s infinite;
+}
+
+/* Animation for the logo */
+@keyframes logo-animation {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        text-shadow: 0 0 20px rgba(111, 66, 193, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        text-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
+    }
+}
+
+@keyframes logo-cool-animation {
+    0% {
+        transform: rotate(0deg) scale(1);
+        color: #6f42c1;
+    }
+    25% {
+        transform: rotate(15deg) scale(1.1);
+        color: #0d6efd;
+    }
+    50% {
+        transform: rotate(-15deg) scale(1.2);
+        color: #28a745;
+    }
+    75% {
+        transform: rotate(15deg) scale(1.1);
+        color: #fd7e14;
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+        color: #6f42c1;
+    }
+}
+
+.community-section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.community-section .card {
+    background-color: #2c2c2c;
+    border: none;
+    border-radius: 10px;
+}
+
+.community-section .card-header {
+    background-color: #6f42c1;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.discussion-board h3 {
+    color: #6f42c1;
+    margin-bottom: 20px;
+}
+
+.timer-container {
+    position: relative;
+    width: 120px; /* Increased size for better visibility */
+    height: 120px;
+    margin: 20px auto;
+    overflow: visible; /* Ensure the circle is not cut off */
+}
+
+.timer-svg {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+    overflow: visible; /* Ensure the circle is not cut off */
+}
+
+.timer-circle-background {
+    fill: none;
+    stroke: #333;
+    stroke-width: 10;
+    border-radius: 50%;
+    animation: dash 1.5s ease-in-out forwards;
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 0, 340;
+    }
+    100% {
+        stroke-dasharray: 340, 0;
+    }
+}
+
+.timer-circle-progress {
+    fill: none;
+    stroke: url(#gradient);
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s linear, stroke 0.5s ease-in-out;
+    filter: drop-shadow(0 0 10px rgba(111, 66, 193, 0.8));
+}
+
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+/* Gradient Color Transition Based on Time Left */
+.timer-circle-progress.time-low {
+    stroke: #dc3545; /* Red when time is low */
+}
+
+.timer-circle-progress.time-medium {
+    stroke: #ffc107; /* Yellow when time is medium */
+}
+
+.timer-circle-progress.time-high {
+    stroke: url(#gradient); /* Default gradient */
+}
+
+/* Pulsating Animation for Timer Text */
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments for Timer */
+@media (max-width: 768px) {
+    .timer-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .timer-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .timer-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timer-text {
+        font-size: 1rem;
+    }
+}
+
+/* Define the gradient for the timer progress */
+.timer-svg defs #gradient {
+    stop {
+        stop-color: #6f42c1;
+    }
+    stop {
+        offset: 1;
+        stop-color: #0d6efd;
+    }
+}
+
+/* ...existing code... */
+
+/* Enhance Existing Media Queries */
+
+/* Larger devices (tablets) */
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    
+    .card-title {
+        font-size: 1.5rem;
+    }
+    
+    .quiz-card-body h4 {
+        font-size: 1.5rem;
+    }
+    
+    .timer-container {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .timer-text {
+        font-size: 1.2rem;
+    }
+    
+    .logo {
+        font-size: 2.5rem;
+    }
+}
+
+/* Small devices (small tablets and large phones) */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+    }
+    
+    .quiz-card-body h4 {
+        font-size: 1.25rem;
+    }
+    
+    .timer-container {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .timer-text {
+        font-size: 1rem;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+    
+    /* Stack difficulty chooser buttons vertically */
+    .difficulty-chooser .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .quiz-card-body h4 {
+        font-size: 1rem;
+    }
+    
+    .timer-container {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .timer-text {
+        font-size: 0.875rem;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    /* Adjust buttons in difficulty chooser */
+    .difficulty-chooser .btn {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}
+
+/* Ensure images are responsive */
+img, .timer-svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Flexible Layouts using Flexbox */
+.quiz-container, .difficulty-chooser, .community-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure ProgressBar adapts to container width */
+.custom-progress {
+    width: 100%;
+}
+
+/* ...existing code... */
+
+/* Ensure logo is visible on all screen sizes */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ...existing styles... */
+}
+
+/* Ensure Difficulty Chooser is visible on all screen sizes */
+.difficulty-chooser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* ...existing styles... */
+}
+
+@media (max-width: 768px) {
+    /* ...existing responsive styles... */
+
+    /* Ensure logo and difficulty chooser are visible */
+    .logo-container,
+    .difficulty-chooser {
+        display: flex;
+    }
+
+    /* ...existing responsive styles... */
+}
+
+
+body.quiz-time {
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.quiz-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent internal scrolling */
+}
+
+/* ...existing code... */
+
+body.night-mode {
+    background-color: rgba(18, 18, 18, 0.8); /* Translucent dark background */
+}
+
+body.light-mode {
+    background-color: rgba(255, 255, 255, 0.8); /* Translucent light background */
+}
+
+.form-check {
+    position: relative;
+    margin-bottom: 10px; /* Reduced margin */
+    padding-left: 10px; /* Further reduced padding */
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent; /* Add border for hover effect */
+    border-radius: 5px; /* Add border radius */
+}
+
+.form-check:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-color: #6f42c1; /* Change border color on hover */
+}
+
+.form-check-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+}
+
+.form-check-label {
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px 15px; /* Adjust padding */
+    display: block; /* Ensure label takes full width */
+    background-color: rgba(30, 30, 30, 0.8); /* Add background color */
+    border-radius: 5px; /* Add border radius */
+}
+
+.form-check-input:checked + .form-check-label {
+    background-color: #6f42c1;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
+}
+
+.form-check-input {
+    /* Remove default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    /* Optional: Customize the radio button appearance */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6f42c1;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-check-input:checked::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #6f42c1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Add new animation for quiz options */
+@keyframes optionFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-option {
+    animation: optionFadeIn 0.5s ease-in-out;
+}
+
+/* Add new hover effect */
+.form-check-label:hover {
+    background-color: #6f42c1;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
+}
+
+/* ...existing code... */
+
+/* Update styles for quiz options */
+.form-check {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 10px; /* Further reduced padding */
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-check:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+}
+
+.form-check-label {
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    padding: 3px 5px; /* Further reduced padding */
+}
+
+.form-check-input:checked + .form-check-label {
+    background-color: #6f42c1;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(111, 66, 193, 0.5);
+}
+
+.form-check-input:checked + .form-check-label::before {
+    content: none;
+}
+
+.form-check-input:checked::before {
+    content: none;
+}
+
+@keyframes checkmark {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+body.quiz-time .navbar,
+body.level-selection .navbar {
+    display: none;
+}
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Further reduced spacing between options */
+}
+
+.btn-primary.mt-3 {
+    margin-top: 10px; /* Reduced margin */
+}
+
+.difficulty-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.difficulty-time {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.feedback-message {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.feedback-message h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feedback-message p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.btn-primary.mt-3 {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #6f42c1 0%, #0d6efd 100%);
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    transition: background 0.4s, transform 0.2s;
+}
+
+.btn-primary.mt-3:hover {
+    background: linear-gradient(135deg, #59329e 0%, #0b5ed7 100%);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,596 @@
+[
+    {
+        "question": "What was the capital of the Axumite Kingdom?",
+        "a": "Cairo",
+        "b": "Axum",
+        "c": "Meroe",
+        "d": "Thebes",
+        "correct": "b",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which religion was adopted by the Axumite Kingdom?",
+        "a": "Islam",
+        "b": "Judaism",
+        "c": "Christianity",
+        "d": "Hinduism",
+        "correct": "c",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What currency was used in the Axumite Kingdom?",
+        "a": "Bronze Coins",
+        "b": "Silver Coins",
+        "c": "Gold Coins",
+        "d": "All of the above",
+        "correct": "d",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What was a primary export of the Axumite Kingdom?",
+        "a": "Silk",
+        "b": "Ivory",
+        "c": "Spices",
+        "d": "Tea",
+        "correct": "b",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which script did the Axumite Kingdom use?",
+        "a": "Latin",
+        "b": "Greek",
+        "c": "Ge'ez",
+        "d": "Arabic",
+        "correct": "c",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The Axumite Kingdom was located in which continent?",
+        "a": "Asia",
+        "b": "Europe",
+        "c": "Africa",
+        "d": "South America",
+        "correct": "c",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which structures are the Axumite Kingdom famous for?",
+        "a": "Pyramids",
+        "b": "Obelisks",
+        "c": "Castles",
+        "d": "Temples",
+        "correct": "b",
+        "difficulty": "easy"
+    },
+    {
+        "question": "In which century did the Axumite Kingdom reach its peak?",
+        "a": "1st Century",
+        "b": "4th Century",
+        "c": "10th Century",
+        "d": "15th Century",
+        "correct": "b",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which sea was crucial for Axum's trade?",
+        "a": "Red Sea",
+        "b": "Black Sea",
+        "c": "Dead Sea",
+        "d": "Caspian Sea",
+        "correct": "a",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Axumite Kingdom is considered one of the ancient what?",
+        "a": "Advanced Civilizations",
+        "b": "Nomadic Tribes",
+        "c": "Barbarian Societies",
+        "d": "Hunter-Gatherers",
+        "correct": "a",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What was the main language of the Axumite Kingdom?",
+        "a": "Greek",
+        "b": "Latin",
+        "c": "Ge'ez",
+        "d": "Arabic",
+        "correct": "c",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which modern-day country was part of the Axumite Kingdom?",
+        "a": "Ethiopia",
+        "b": "Egypt",
+        "c": "Sudan",
+        "d": "Libya",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which religion did King Ezana convert to?",
+        "a": "Islam",
+        "b": "Christianity",
+        "c": "Judaism",
+        "d": "Buddhism",
+        "correct": "b",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Axum was known for trading with which far-off empire?",
+        "a": "Roman Empire",
+        "b": "Han Dynasty",
+        "c": "Persian Empire",
+        "d": "Mongol Empire",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What led to the decline of the Axumite Kingdom?",
+        "a": "Climate Change",
+        "b": "Invasion",
+        "c": "Economic Isolation",
+        "d": "All of the above",
+        "correct": "d",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The Axumite Kingdom minted coins made of which metals?",
+        "a": "Gold and Silver",
+        "b": "Copper and Nickel",
+        "c": "Iron and Lead",
+        "d": "Zinc and Tin",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which neighboring kingdom was a rival to Axum?",
+        "a": "Kush",
+        "b": "Egypt",
+        "c": "Carthage",
+        "d": "Phoenicia",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What was the primary religion in Axum before Christianity?",
+        "a": "Islam",
+        "b": "Judaism",
+        "c": "Polytheism",
+        "d": "Zoroastrianism",
+        "correct": "c",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which famous traveler mentioned the Axumite Kingdom?",
+        "a": "Ibn Battuta",
+        "b": "Marco Polo",
+        "c": "Cosmas Indicopleustes",
+        "d": "Herodotus",
+        "correct": "c",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What title was given to the kings of Axum?",
+        "a": "Negus",
+        "b": "Pharaoh",
+        "c": "Emperor",
+        "d": "Sultan",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which sea did the Axumite Kingdom have access to?",
+        "a": "Red Sea",
+        "b": "Mediterranean Sea",
+        "c": "Black Sea",
+        "d": "Caspian Sea",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Who was the most famous king of the Axumite Kingdom?",
+        "a": "Ezana",
+        "b": "Solomon",
+        "c": "Menelik",
+        "d": "Haile Selassie",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which empire acknowledged Axum as one of the four great powers?",
+        "a": "Byzantine Empire",
+        "b": "Roman Empire",
+        "c": "Persian Empire",
+        "d": "Sassanid Empire",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What was the ancient port city associated with Axum?",
+        "a": "Adulis",
+        "b": "Alexandria",
+        "c": "Massawa",
+        "d": "Zeila",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which inscription provides evidence of King Ezana's conversion?",
+        "a": "Rosetta Stone",
+        "b": "Ezana Stone",
+        "c": "Behistun Inscription",
+        "d": "Code of Hammurabi",
+        "correct": "b",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Axumite architecture is renowned for its monolithic what?",
+        "a": "Stelae",
+        "b": "Ziggurats",
+        "c": "Pyramids",
+        "d": "Cathedrals",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The Axumite Kingdom was linked to which ancient trade route?",
+        "a": "Silk Road",
+        "b": "Incense Route",
+        "c": "Trans-Saharan Route",
+        "d": "Amber Road",
+        "correct": "b",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which animal is depicted on some Axumite coins symbolizing their power?",
+        "a": "Lion",
+        "b": "Elephant",
+        "c": "Bull",
+        "d": "Eagle",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which group invaded and contributed to Axum's decline?",
+        "a": "Arab Muslims",
+        "b": "Vandals",
+        "c": "Turks",
+        "d": "Portuguese",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What was the original religion of King Ezana before conversion?",
+        "a": "Paganism",
+        "b": "Judaism",
+        "c": "Zoroastrianism",
+        "d": "Islam",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What was the capital city of the Axumite Kingdom?",
+        "a": "Lalibela",
+        "b": "Axum",
+        "c": "Gondar",
+        "d": "Harar",
+        "correct": "b",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which ancient language, used in the Axumite Kingdom, is still used liturgically in Ethiopia?",
+        "a": "Amharic",
+        "b": "Geez",
+        "c": "Tigrinya",
+        "d": "Oromo",
+        "correct": "b",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Who was the king credited with introducing Christianity to the Axumite Kingdom?",
+        "a": "King Ezana",
+        "b": "King Kaleb",
+        "c": "King Menelik I",
+        "d": "King Susenyos",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The Axumite Kingdom was known for the construction of large obelisks made from a single piece of rock. What are these structures called?",
+        "a": "Stelae",
+        "b": "Pyramids",
+        "c": "Dolmens",
+        "d": "Megaliths",
+        "correct": "a",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which port city was crucial for Axum's trade with the Roman Empire and India?",
+        "a": "Adulis",
+        "b": "Massawa",
+        "c": "Zeila",
+        "d": "Djibouti",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "In which century did the Axumite Kingdom officially adopt Christianity?",
+        "a": "1st century",
+        "b": "4th century",
+        "c": "7th century",
+        "d": "10th century",
+        "correct": "b",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which major religion was adopted by the Axumite Kingdom in the 4th century?",
+        "a": "Islam",
+        "b": "Judaism",
+        "c": "Christianity",
+        "d": "Hinduism",
+        "correct": "c",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who was the famous king who converted the Axumite Kingdom to Christianity?",
+        "a": "Kaleb",
+        "b": "Ezana",
+        "c": "Menelik",
+        "d": "Tewodros",
+        "correct": "b",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What language was commonly used in the Axumite Kingdom for inscriptions?",
+        "a": "Amharic",
+        "b": "Arabic",
+        "c": "Sabaean",
+        "d": "Ge'ez",
+        "correct": "d",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which body of water was crucial to Axum's trade and commerce?",
+        "a": "Indian Ocean",
+        "b": "Nile River",
+        "c": "Red Sea",
+        "d": "Mediterranean Sea",
+        "correct": "c",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The Axumite Kingdom was located in which present-day countries?",
+        "a": "Ethiopia and Eritrea",
+        "b": "Egypt and Sudan",
+        "c": "Somalia and Djibouti",
+        "d": "Kenya and Uganda",
+        "correct": "a",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which metalworking skill were the Axumites particularly known for?",
+        "a": "Iron smelting",
+        "b": "Goldsmithing",
+        "c": "Bronze casting",
+        "d": "Steel forging",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What was the primary currency of the Axumite Kingdom?",
+        "a": "Gold coins",
+        "b": "Salt bars",
+        "c": "Cowrie shells",
+        "d": "Silver ingots",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which port city's decline impacted Axum's maritime trade?",
+        "a": "Massawa",
+        "b": "Adulis",
+        "c": "Zeila",
+        "d": "Mogadishu",
+        "correct": "b",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Axum was known for exporting which precious commodity?",
+        "a": "Silk",
+        "b": "Gold",
+        "c": "Ivory",
+        "d": "Spices",
+        "correct": "c",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which ancient text mentions the Axumite Kingdom?",
+        "a": "Periplus of the Erythraean Sea",
+        "b": "The Odyssey",
+        "c": "The Epic of Gilgamesh",
+        "d": "Rigveda",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What significant artifact is believed to be housed in Axum according to Ethiopian tradition?",
+        "a": "Ark of the Covenant",
+        "b": "Holy Grail",
+        "c": "Spear of Destiny",
+        "d": "Shroud of Turin",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which empire referred to Axum as one of the world's great powers?",
+        "a": "Roman Empire",
+        "b": "Persian Empire",
+        "c": "Han Dynasty",
+        "d": "Gupta Empire",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which script did the Axumites develop that included vowels?",
+        "a": "Old Nubian",
+        "b": "Ge'ez",
+        "c": "Hieroglyphics",
+        "d": "Cuneiform",
+        "correct": "b",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which king is credited with invading the Himyarite Kingdom in Yemen?",
+        "a": "King Kaleb",
+        "b": "King Ezana",
+        "c": "King Menelik II",
+        "d": "King Haile Selassie",
+        "correct": "a",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The decline of the Axumite Kingdom was partly due to the rise of which power?",
+        "a": "Islamic Caliphates",
+        "b": "Ottoman Empire",
+        "c": "Portuguese Empire",
+        "d": "Zagwe Dynasty",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which religion did the Axumite Kingdom practice before Christianity?",
+        "a": "Animism",
+        "b": "Judaism",
+        "c": "Polytheistic Sabaean religion",
+        "d": "Islam",
+        "correct": "c",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What were the tall stone monuments built by the Axumites called?",
+        "a": "Pyramids",
+        "b": "Stelae",
+        "c": "Ziggurats",
+        "d": "Obelisks",
+        "correct": "b",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which significant trade route did the Axumite Kingdom control a portion of?",
+        "a": "Silk Road",
+        "b": "Incense Route",
+        "c": "Trans-Saharan Trade Route",
+        "d": "Spice Route",
+        "correct": "b",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which modern-day Ethiopian holiday commemorates the finding of the True Cross, linked to Axumite tradition?",
+        "a": "Timkat",
+        "b": "Meskel",
+        "c": "Enkutatash",
+        "d": "Fasika",
+        "correct": "b",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What was the official language of the Axumite administration?",
+        "a": "Latin",
+        "b": "Greek",
+        "c": "Ge'ez",
+        "d": "Amharic",
+        "correct": "c",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which animal is depicted on many Axumite coins symbolizing their dynasty?",
+        "a": "Lion",
+        "b": "Eagle",
+        "c": "Ox",
+        "d": "Elephant",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The Axumite Kingdom was strategically located between which two continents?",
+        "a": "Asia and Europe",
+        "b": "Africa and Asia",
+        "c": "Europe and Africa",
+        "d": "Australia and Asia",
+        "correct": "b",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Axum's decline was accelerated by the overuse of which natural resource?",
+        "a": "Gold",
+        "b": "Timber",
+        "c": "Soil fertility",
+        "d": "Water",
+        "correct": "c",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which neighboring kingdom did Axum frequently engage with in both trade and conflicts?",
+        "a": "Kingdom of Kush",
+        "b": "Egyptian Empire",
+        "c": "Himyarite Kingdom",
+        "d": "Kingdom of Mali",
+        "correct": "c",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which famous traveler and historian mentioned Axum in his writings?",
+        "a": "Herodotus",
+        "b": "Marco Polo",
+        "c": "Ibn Battuta",
+        "d": "Cosmas Indicopleustes",
+        "correct": "d",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What agricultural technique did the Axumites employ to combat erosion?",
+        "a": "Terracing",
+        "b": "Crop rotation",
+        "c": "Irrigation",
+        "d": "Slash and burn",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which precious metal was mined in Axum and contributed to its wealth?",
+        "a": "Silver",
+        "b": "Gold",
+        "c": "Copper",
+        "d": "Platinum",
+        "correct": "b",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the significance of the Ezana Stone?",
+        "a": "Details laws of Axum",
+        "b": "Records the conversion to Christianity",
+        "c": "Describes astronomical observations",
+        "d": "Maps trade routes",
+        "correct": "b",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Which architectural feature is prominent in Axumite structures?",
+        "a": "Corbelled arches",
+        "b": "Domes",
+        "c": "Pointed arches",
+        "d": "Sunken relief",
+        "correct": "a",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which crop was first introduced to Axum through trade and became a staple?",
+        "a": "Maize",
+        "b": "Coffee",
+        "c": "Teff",
+        "d": "Wheat",
+        "correct": "c",
+        "difficulty": "medium"
+    }
+]
