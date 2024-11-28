@@ -489,6 +489,7 @@ img {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fadeInUp 0.5s ease-in-out;
+    text-align: center; /* Center text */
 }
 
 .auth-header {
@@ -499,6 +500,13 @@ img {
 .auth-header h2 {
     font-size: 30px; /* Increased size */
     color: #6f42c1;
+    margin-bottom: 10px; /* Add margin */
+}
+
+.auth-header p {
+    font-size: 18px; /* Add font size */
+    color: #ffffff; /* Light text color */
+    margin-bottom: 20px; /* Add margin */
 }
 
 .auth-form-group {
@@ -1655,3 +1663,80 @@ body.level-selection .navbar {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
+/* ...existing code... */
+
+.quiz-finished {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 30, 30, 0.9); /* Semi-transparent dark background */
+    color: #ffffff;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease-in-out;
+    text-align: center;
+}
+
+.quiz-finished h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #6f42c1;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.quiz-finished p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.quiz-finished button {
+    background: linear-gradient(135deg, #6f42c1 0%, #0d6efd 100%);
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.quiz-finished button:hover {
+    background: linear-gradient(135deg, #59329e 0%, #0b5ed7 100%);
+    transform: scale(1.05);
+}
+
+.incorrect-questions {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+    background: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.incorrect-questions h3 {
+    font-size: 28px;
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+.incorrect-question {
+    margin-bottom: 15px;
+}
+
+.incorrect-question p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* ...existing code... */
